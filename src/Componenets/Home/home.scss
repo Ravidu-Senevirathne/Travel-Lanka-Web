@@ -118,8 +118,38 @@
                     background: blue;
                 }
             }
+            .searchOption{
+               position: absolute;
+               background: var(--gradientColor);
+               width: max-content;
+               bottom: -0.7rem;
+               column-gap: .8rem;
+               padding: 5px 1rem;
+               border-radius: 3rem;
+               left: 50%;
+               transform: translate(-50%);
+               justify-content: center;
+             cursor: pointer;
 
+               &:hover{
+                background: var(--PrimaryColor);
+               }
+            }
             
+        }
+        .homeFooterIcons{
+          width: 100%;
+          justify-content: space-between;
+          
+          .icon{
+            font-size: 20px;
+            margin: 0 5px;
+            color: var(--WhiteColor);
+            font-weight: 600;
+            &:hover{
+                color: var(--PrimaryColor);
+            }
+          }
         }
     }
  

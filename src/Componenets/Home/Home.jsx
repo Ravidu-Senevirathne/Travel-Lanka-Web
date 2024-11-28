@@ -2,7 +2,10 @@ import React from 'react'
 import './home.scss'
 import video from '../../../src/Assets/video.mp4'
 import { GrLocation } from "react-icons/gr";
-import { SlCalender } from "react-icons/sl";
+import { HiFilter } from "react-icons/hi";
+import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
+import { BsListTask } from "react-icons/bs";
+import { TbApps } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -44,6 +47,27 @@ const Home = () => {
               <input type="range" max="20000" min="5000" />
             </div>
           </div>
+          <div className="searchOption flex">
+          <HiFilter className='icon'/>
+          <span>MORE FILTERS</span>
+          </div>
+        </div>
+
+        <div className="homeFooterIcons flex">
+          <div className="rightIcons">
+          <FaFacebook className='icon'/>
+          <FaInstagram className='icon'/>
+          <FaTripadvisor className='icon'/>
+          
+
+          </div>
+
+          <div className="leftIcons">
+          <BsListTask className='icon'/>
+          <TbApps className='icon'/>
+
+          </div>
+
         </div>
 
       </div>
