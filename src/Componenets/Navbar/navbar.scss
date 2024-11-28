@@ -22,6 +22,7 @@
         width: 100%;
         padding: 1rem;
         z-index: 1000;
+        box-shadow: 0 2px 4px rgba(2,15,29,0.242);
 
         .logo{
             color: var(--blackColor);
@@ -43,12 +44,12 @@
                 height: max-content;
                 width: 80%;
                 border-radius: 1rem;
-                top: 6rem;
+                top: -500rem;
                 left: 50%;
                 transform: translate(-50%);
                 z-index: 2000;
                 box-shadow: 0 2px 4px rgba(2,15,29,0.904);
-                transition: .3s ease-in-out;
+                transition: .5s ease-in-out;
 
                 .navLists{
                  
@@ -80,15 +81,21 @@
                             }
                         }
                 }
-                .closeNavBar{
+                .closeNavbar {
                     position: absolute;
                     top: 1rem;
                     right: 1.5rem;
+                    font-size: 25px;
                     color: var(--PrimaryColor);
-                    &:hover{
-                        color: var(--SecondaryColor);
+                    cursor: pointer;
+                    &:hover {
+                      color: var(--SecondaryColor);
                     }
-                }
+                  }
+            }
+
+            .activeNavbar{
+                top:7rem;
             }
             
         }
