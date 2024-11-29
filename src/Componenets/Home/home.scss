@@ -186,3 +186,14 @@
     }
     
 }
+
+@media screen and (min-width:660px){
+    .home{
+        .homeContent{
+            .cardDiv{
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
