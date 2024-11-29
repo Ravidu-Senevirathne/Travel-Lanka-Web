@@ -146,3 +146,21 @@
         }
     }
 }
+
+//media queries
+
+@media screen and (min-width:500px){
+   .title{
+    font-size: 1.5rem;
+    &::after{
+        width: 155px !important; 
+    }
+   } 
+   .secContent{
+    grid-template-columns: repeat(2,1fr);
+
+    .singleDestination{
+        height: auto;
+    }
+   }
+}
