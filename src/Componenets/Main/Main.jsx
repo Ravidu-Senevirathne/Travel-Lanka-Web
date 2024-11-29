@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './main.scss'
 import anuradapura from '../../Assets/anuradhapura-6065428_1280.jpg'
 import ella from '../../Assets/ella.jpg'
@@ -10,11 +10,16 @@ import polonnaruwa from '../../Assets/polonnaruwa.jpg'
 import sigiriya from '../../Assets/sigiriya.jpg'
 import yaala from '../../Assets/yaala.jpg'
 import kandy from '../../Assets/temple-204803_1920.jpg'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import { HiLocationMarker } from "react-icons/hi";
 import { FaClipboardCheck } from "react-icons/fa";
+
 const Main = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
   const Data = [
     {
       id: 1,
